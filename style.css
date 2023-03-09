@@ -67,7 +67,9 @@ nav ul li{
     border-radius: 10px;
     padding: 34px;
     background-image: url('back1.jpg');
-
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
 }
 
 .bottom{
