@@ -9,7 +9,7 @@ A Spotify clone project built with HTML, CSS, and JavaScript.
 
 ## Description
 
-This project aims to recreate the basic functionality and design of Spotify, allowing users to search for songs, create playlists, and play music. It utilizes the Spotify Web API for fetching music data and utilizes HTML, CSS, and JavaScript to build the user interface and handle the interactions.
+This project aims to recreate the basic functionality and design of Spotify, allowing users to play music. It utilizes HTML, CSS, and JavaScript to build the user interface and handle the interactions.
 
 ## Features
 
