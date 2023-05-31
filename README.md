@@ -2,6 +2,10 @@
 
 A Spotify clone project built with HTML, CSS, and JavaScript.
 
+## Demo
+
+Check out the live demo: [Spotify-Clone](https://namdevkashish.github.io/Spotify-Clone/)
+
 ## Screenshot
 
 ![Screenshot 1](https://github.com/namdevkashish/Spotify-Clone/blob/main/Layout.png?raw=true)
