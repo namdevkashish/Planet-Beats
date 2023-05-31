@@ -2,7 +2,7 @@
 
 A Spotify clone project built with HTML, CSS, and JavaScript.
 
-## Screenshots
+## Screenshot
 
 ![Screenshot 1](https://github.com/namdevkashish/Spotify-Clone/blob/main/Layout.png?raw=true)
 *Sample Layout*
@@ -23,17 +23,20 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 
 2. Create a new branch:
 
-Copy code
-git checkout -b feature/your-feature-name
+#### Copy code
+<br>
+   git checkout -b feature/your-feature-name
 
 3. Make your changes and commit them:
 
-Copy code
-git commit -m 'Add your commit message here'
+#### Copy code
+<br>
+   git commit -m 'Add your commit message here'
 
 4. Push your changes to your forked repository:
 
-Copy code
-git push origin feature/your-feature-name
+#### Copy code
+<br>
+   git push origin feature/your-feature-name
 
 5. Open a pull request on the original repository.
