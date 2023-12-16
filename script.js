@@ -1,5 +1,58 @@
 console.log("Welcome to Spotify");
 
+// Play button - edit <---------
+
+const pauseAllSongs = (index) => {
+    songItems.forEach((element, i) => {
+        if (i !== index) {
+            const playIcon = element.querySelector('.songItemPlay');
+            playIcon.classList.remove('fa-pause-circle');
+            playIcon.classList.add('fa-play-circle');
+        }
+    });
+};
+
+Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) => {
+    element.addEventListener('click', (e) => {
+        const clickedIndex = parseInt(e.target.id);
+        if (songIndex !== clickedIndex) {
+            // Pause the current song and reset its state
+            audioElement.pause();
+            audioElement.currentTime = 0;
+            masterPlay.classList.remove('fa-pause-circle');
+            masterPlay.classList.add('fa-play-circle');
+            gif.style.opacity = 0;
+
+            // Update the audio element and play the new song
+            audioElement.src = songs[clickedIndex].filePath;
+            masterSongName.innerText = songs[clickedIndex].songName;
+            audioElement.play();
+            gif.style.opacity = 1;
+            masterPlay.classList.remove('fa-play-circle');
+            masterPlay.classList.add('fa-pause-circle');
+
+            // Pause all other songs and reset their state
+            pauseAllSongs(clickedIndex);
+        } else {
+            // Toggle pause/play for the same song
+            if (audioElement.paused || audioElement.currentTime <= 0) {
+                audioElement.play();
+                gif.style.opacity = 1;
+                masterPlay.classList.remove('fa-play-circle');
+                masterPlay.classList.add('fa-pause-circle');
+            } else {
+                audioElement.pause();
+                gif.style.opacity = 0;
+                masterPlay.classList.remove('fa-pause-circle');
+                masterPlay.classList.add('fa-play-circle');
+            }
+        }
+    });
+});
+
+
+// <----------
+
 // Initialize the Variables
 let songIndex = 0;
 let audioElement = new Audio('songs/1.mp3');
@@ -10,16 +63,16 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    {songName: "Standing By You", filePath: "songs/1.mp3", coverPath: "cover/cover1.jpg"},
-    {songName: "Perfect", filePath: "songs/2.mp3", coverPath: "cover/cover2.jpg"},
-    {songName: "Make You Mine", filePath: "songs/3.mp3", coverPath: "cover/cover3.jpg"},
-    {songName: "Love Me Like You Do", filePath: "songs/4.mp3", coverPath: "cover/cover4.jpg"},
-    {songName: "Umbrella", filePath: "songs/5.mp3", coverPath: "cover/cover5.jpg"},
-    {songName: "On My Way", filePath: "songs/6.mp3", coverPath: "cover/cover6.jpg"},
-    {songName: "Cool", filePath: "songs/7.mp3", coverPath: "cover/cover7.jpg"},
-    {songName: "Heat Waves", filePath: "songs/8.mp3", coverPath: "cover/cover8.jpg"},
-    {songName: "Dharia - August Diaries", filePath: "songs/9.mp3", coverPath: "cover/cover9.jpg"},
-    {songName: "Control", filePath: "songs/10.mp3", coverPath: "cover/cover10.jpg"},
+    {songName: "Closer", filePath: "songs/1.mp3", coverPath: "cover/Closer1.jpeg"},
+    {songName: "Dandelions", filePath: "songs/2.mp3", coverPath: "cover/Dandelions2.jpeg"},
+    {songName: "Baby, I'm Yours", filePath: "songs/3.mp3", coverPath: "cover/Baby_Im_Yours3.jpeg"},
+    {songName: "Let Me Down Slowly", filePath: "songs/4.mp3", coverPath: "cover/Let_Me_Down_Slowly4.jpeg"},
+    {songName: "Lover", filePath: "songs/5.mp3", coverPath: "cover/Lover5.jpeg"},
+    {songName: "Night Changes", filePath: "songs/6.mp3", coverPath: "cover/Night_Changes6.jpeg"},
+    {songName: "Treat You Better", filePath: "songs/7.mp3", coverPath: "cover/Treat_You_Better7.jpeg"},
+    {songName: "Heat Waves", filePath: "songs/8.mp3", coverPath: "cover/Heat_Waves8.jpg"},
+    {songName: "Under The Influence", filePath: "songs/9.mp3", coverPath: "cover/Under_The_Influence9.jpeg"},
+    {songName: "We Don't Talk Anymore", filePath: "songs/10.mp3", coverPath: "cover/We_Don't_Talk_Anymore10.jpeg"},
 ]
 
 songItems.forEach((element, i)=>{ 
