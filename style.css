@@ -63,7 +63,7 @@ nav ul li{
     font-family: 'Varela Round', sans-serif;
     display: flex;
     width: 60%;
-    margin: 23px auto;
+    margin: 12px auto;
     border-radius: 10px;
     padding: 34px;
     background-image: url('back2.png');
@@ -97,7 +97,7 @@ nav ul li{
 }
 
 .songItemContainer{
-    margin-top: 60px;
+    margin-top: 35px;
 }
 
 .songItem{
