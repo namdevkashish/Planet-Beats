@@ -8,6 +8,9 @@
 body{
     background-color: rgb(53, 53, 53);
     overflow:hidden;
+    background-image: url('bg-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 *{
@@ -66,9 +69,10 @@ nav ul li{
     margin: 12px auto;
     border-radius: 10px;
     padding: 34px;
-    background-image: url('back2.png');
+    background-image: url('bg-2.jpg');
     background-repeat: no-repeat;
-    background-position: 12cm;
+    background-size: cover;
+/*     background-position: 12cm; */
 }
 
 .bottom{
