@@ -4,7 +4,7 @@ Planet Beats project is a basic music application built with HTML, CSS, and Java
 
 ## Demo
 
-Check out the live demo: [PlanetBeats](https://namdevkashish.github.io/Spotify-Clone/)
+Check out the live demo: [PlanetBeats](https://namdevkashish.github.io/Planet-Beats/)
 
 ## Screenshot
 
