@@ -1,4 +1,4 @@
-# Spotify Clone
+# PlanetBeats
 
 Planet Beats project is a basic music application built with HTML, CSS, and JavaScript.
 
