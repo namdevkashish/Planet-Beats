@@ -8,7 +8,7 @@ Check out the live demo: [Spotify-Clone](https://namdevkashish.github.io/Spotify
 
 ## Screenshot
 
-![Screenshot 1](https://github.com/namdevkashish/Spotify-Clone/blob/main/LayoutPage.png?raw=true)
+![Screenshot 1](Layout.png)
 *Sample Layout*
 
 ## Description
