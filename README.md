@@ -1,10 +1,10 @@
 # Spotify Clone
 
-A Spotify clone project built with HTML, CSS, and JavaScript.
+Planet Beats project is a basic music application built with HTML, CSS, and JavaScript.
 
 ## Demo
 
-Check out the live demo: [Spotify-Clone](https://namdevkashish.github.io/Spotify-Clone/)
+Check out the live demo: [PlanetBeats](https://namdevkashish.github.io/Spotify-Clone/)
 
 ## Screenshot
 
@@ -13,7 +13,7 @@ Check out the live demo: [Spotify-Clone](https://namdevkashish.github.io/Spotify
 
 ## Description
 
-This project aims to recreate the basic functionality and design of Spotify, allowing users to play music. It utilizes HTML, CSS, and JavaScript to build the user interface and handle the interactions.
+This project aims to recreate the basic functionality and design of a music application, allowing users to play music. It utilizes HTML, CSS, and JavaScript to build the user interface and handle the interactions.
 
 ## Features
 
