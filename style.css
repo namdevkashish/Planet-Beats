@@ -139,3 +139,77 @@ nav ul li{
     opacity: 0;
     transition: opacity 0.4s ease-in;
 }
+
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .container {
+        min-height: 80vh;
+        width: 70%;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .bottom{
+        height: 95px;
+        display: list-item;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .brand img {
+        width: 35px;
+        padding: 0 6px;
+    }
+
+    .list{
+        gap: 11px;
+    }
+    
+    .songItem{
+        height: 30px;
+        margin: 15px 0;
+        font-size: small;
+    }
+    
+    .songItem img{
+        width: 25px;
+        margin: 4px;
+    }
+
+    .timestamp{
+        margin: 2px 8px;
+    }
+
+    
+    #myProgressBar{
+        width: 80vw;
+        height: 3px;
+        cursor: pointer;
+        margin-left: 2rem;
+    } 
+
+    .songInfo img{
+        width: 0;
+    }
+
+    .songInfo{
+        margin-top: 10px;
+        position: absolute;
+        left: 8vw;
+        font-family: 'Varela Round', sans-serif;
+    }
+
+    .icons{
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .icons i{
+        cursor: pointer;
+        font-size: xx-large;
+        justify-content: center;
+    }
+    
+}
